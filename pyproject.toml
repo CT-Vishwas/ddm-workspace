@@ -1,0 +1,7 @@
+[project]
+name = "retail-insights"
+version = "0.1.0"
+dependencies = [
+    "numpy>=2.3.5",
+    "pandas>=2.3.3"
+]
