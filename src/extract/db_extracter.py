@@ -1,6 +1,6 @@
 # src/extract/db_extractor.py
 
-from ...src.app.services.database import DatabaseSingleton
+from ..app.services.database import DatabaseSingleton
 import pandas as pd
 
 def extract_latest_data():

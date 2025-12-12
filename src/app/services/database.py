@@ -3,7 +3,7 @@
 import mysql.connector
 from mysql.connector import pooling
 from mysql.connector import errorcode
-from ...config import Settings # Import the Settings singleton
+from ...config.settings import Settings # Import the Settings singleton
 
 # --- Global Variables ---
 # _db_pool will hold the single instance of the connection pool object
@@ -142,5 +142,5 @@ if __name__ == '__main__':
             conn2.close()
             print("Connection 2 returned to pool.")
             
-    # 4. Cleanup when the app is shutting down
-    db_manager.close_pool()
+    # # 4. Cleanup when the app is shutting down
+    # db_manager.close_pool()
